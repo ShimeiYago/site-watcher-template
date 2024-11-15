@@ -1,52 +1,13 @@
-<div align="center">
-  <br>
- <img src="https://raw.githubusercontent.com/sinanbekar/browser-extension-react-typescript-starter/main/public/images/extension_128.png" alt="Browser Extension React & TypeScript Starter" width="128">
-  <br>
-  <h2>
-    Browser Extension <br>
-    React & TypeScript Starter
-    <br>
-  </h2>
-</div>
+# SiteWatcher Template
 
-<p align="center">A cross-platform (Chrome, Firefox, Edge, Opera, Brave) web browser extension (Manifest V3 and Manifest V2) starter kit with hot reload support, built with React, Typescript, Redux, Vite, ESLint, Prettier, TailwindCSS, Jest and more! </p>
-<hr />
+SiteWatcher Template helps you to create browser extension to monitor changing of target website. The extension automatically check website recursively, and notify user when it is needed.
 
-<div align="center" >
-  <a href="https://github.com/sinanbekar/browser-extension-react-typescript-starter/actions">
-    <img src="https://github.com/sinanbekar/browser-extension-react-typescript-starter/actions/workflows/ci.yml/badge.svg" alt="CI">
-  </a>
-    &nbsp;
-  <a>
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome">
-  </a>
-    &nbsp;
-  <a href="https://github.com/sinanbekar/browser-extension-react-typescript-starter/blob/main/LICENSE">
-    <img src="https://img.shields.io/apm/l/atomic-design-ui.svg" alt="MIT License">
-  </a>
-
-</div>
-
-<p align="center">
-  <a href="#features">Features</a> ·
-  <a href="#quick-start">Quick Start</a> ·
-  <a href="#important-notes">Important Notes</a> ·
-  <a href="#license">License</a>
-</p>
-
-> 🚀 **NEW** (experimental) Zustand for state management instead Redux, with [`webext-zustand`](https://github.com/sinanbekar/webext-zustand) package. You can try it now on the branch [`experimental-zustand`](https://github.com/sinanbekar/browser-extension-react-typescript-starter/tree/experimental-zustand)
+> Powered by [browser-extension-react-typescript-starter](https://github.com/sinanbekar/browser-extension-react-typescript-starter)
 
 ## Features
 
-- **Instant HMR** (hot reload)[^1]
-- Write once run on any browser
-- Global Redux support with persist option. Effortless communication between content, background, popup, options, and more pages.
-- Provides a basic content example and popup, options, and welcome pages with all React
-- Latest Manifest V3 support
-- Manifest V2 support (beta)
-- Dynamic manifest.json
-- Includes ESLint configured to work with TypeScript and Prettier
-- Includes tests with Jest
+- **Recursive Exploration**: SiteWatcher automatically access the target website recursively, and judge wether site contents include target feature or not.
+- **User Notifications**: When target feature appears, SiteWatcher notify user with browser notification and Line app.
 
 #### Built with
 
@@ -69,34 +30,13 @@
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
 | ✔                                                                                             | ✔ (Beta)                                                                                         | ✔                                                                                       | ✔                                                                                          | ✔                                                                                          |
 
-## Quick Start
-
-Ensure you have
+## Requirements
 
 - [Node.js](https://nodejs.org) 16 or later installed
 - [Yarn](https://yarnpkg.com) installed
 
-### Use the Template
 
-#### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/sinanbekar/browser-extension-react-typescript-starter/generate).
-
-**_or_**
-
-#### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-> **Note** If you don't have yarn installed, run: npm install -g yarn
-
-```bash
-npx degit sinanbekar/browser-extension-react-typescript-starter my-web-extension
-cd my-web-extension
-git init
-```
-
-Then run the following:
+## Quick Start
 
 - `yarn install` to install dependencies.
 - `yarn dev` to start the development server.
@@ -122,26 +62,9 @@ Then run the following:
 - `yarn lint` to call ESLint and Prettier.
 - `yarn test` for testing.
 
-### Redux
+## Development
 
-You can use redux (redux-toolkit) as state manager between popup, background, content and custom pages. Read the documentation for more.
-
-#### [@eduardoac-skimlinks/webext-redux](https://github.com/eduardoacskimlinks/webext-redux)
-
-### Bundling
-
-#### [@crxjs/vite-plugin](https://github.com/crxjs/chrome-extension-tools)
-
-> **Note** This plugin powers the development side of this starter.
->
-> docs: https://crxjs.dev/vite-plugin
->
-> Special thanks to [@jacksteamdev](https://github.com/jacksteamdev) and contributors for this amazing plugin.
-
-## Contributing
-
-This repository is following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard.
 
 ## License
 
-MIT © [Sinan Bekar](https://sinan.engineer)
+MIT © [Shimei Yago](https://github.com/ShimeiYago)
